@@ -1,0 +1,15 @@
+{
+  "name": "weatherproject",
+  "version": "1.0.0",
+  "description": "This is a project that shows the user the weather fo\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001buses weather api to \u001b[C\u001b[C\u001b[C\u001b[C\u001b[ weather forecasting app.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Snehil Shrivastava",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}
