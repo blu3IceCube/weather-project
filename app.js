@@ -7,7 +7,7 @@ const app = express()
 app.use(bodyParser.urlencoded({extended:true}))
 const port = 3000
 
-const key = config.MY_KEY
+let key = process.env.MY_KEY
 
 app.get('/', (req, res) => {
 
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 app.post('/weather', (req, res) => {
 
     const query = req.body.cityName
-    const apiKey = key
+    const apiKey = "d63b15f5338e631d7298ef5e1d8ef3c8"
     const unit = "metric"
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${apiKey}&units=${unit}`
 
