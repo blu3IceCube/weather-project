@@ -2,14 +2,15 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const https = require('https')
+const config = require('./config')
 
 const app = express()
 app.use(bodyParser.urlencoded({extended:true}))
 const port = 3000
 
-const key = process.env.MY_KEY
+// const key = process.env.MY_KEY
 
-// const key = config.MY_KEY
+const key = config.MY_KEY
 
 app.get('/', (req, res) => {
 
